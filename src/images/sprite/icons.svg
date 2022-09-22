@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-facebook" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M30.4 16c0 7.953-6.268 14.4-14 14.4s-14-6.447-14-14.4c0-7.953 6.268-14.4 14-14.4s14 6.447 14 14.4z"></path>
+<path d="M16 0.8c-8.395 0-15.2 6.805-15.2 15.2s6.805 15.2 15.2 15.2c8.395 0 15.2-6.805 15.2-15.2s-6.805-15.2-15.2-15.2zM19.6 11.304h-2.285c-0.271 0-0.572 0.356-0.572 0.83v1.65h2.858l-0.432 2.353h-2.426v7.063h-2.696v-7.063h-2.446v-2.353h2.446v-1.384c0-1.986 1.378-3.599 3.268-3.599h2.285v2.503z"></path>
+</symbol>
+
+<symbol id="icon-facebook-hover" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M19.6 11.704h0.4v-3.303h-2.685c-2.153 0-3.668 1.837-3.668 3.999v0.984h-2.446v3.153h2.446v7.063h3.496v-7.063h2.359l0.060-0.328 0.519-2.825h-2.938v-1.25c0-0.153 0.049-0.277 0.106-0.355 0.041-0.056 0.071-0.071 0.078-0.074h2.272zM1.2 16c0-8.174 6.626-14.8 14.8-14.8s14.8 6.626 14.8 14.8c0 8.174-6.626 14.8-14.8 14.8s-14.8-6.626-14.8-14.8z"></path>
+</symbol>
+</defs>
+</svg>
