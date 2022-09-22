@@ -1,3 +1,36 @@
-.btn {
-	background-color: green;
+:root {
+	--btn-gradient: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+	--bg-color: #06071B;
+}
+
+.btn {	
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	min-width: 200px;
+	
+	padding: 10px 24px;
+
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+
+	color: #FFFFFF;
+
+	background: var(--btn-gradient);
+	border-radius: 5px;
+		
+	cursor: pointer;
+
+
+	// transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		background: linear-gradient(var(--bg-color), var(--bg-color)) padding-box,
+		linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%) border-box;
+		border-style: solid;
+		border-color: transparent;
+	}
 }
