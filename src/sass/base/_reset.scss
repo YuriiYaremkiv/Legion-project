@@ -1,3 +1,9 @@
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
 ul, ol {
 	list-style: none;
 	padding: 0;
@@ -21,3 +27,4 @@ img, picture, svg {
 button {
 	padding: 0;
 }
+

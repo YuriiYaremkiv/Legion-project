@@ -1,5 +1,9 @@
 //general
-@import './base/global';
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+
+//variables
 @import './utils/variables';
 
 //header
