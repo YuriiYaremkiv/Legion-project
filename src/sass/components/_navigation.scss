@@ -1,0 +1,36 @@
+.container {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.nav {
+    display: flex;
+    // justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    align-items: center;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    
+    @media screen and (min-width: 1280px) {
+
+    }
+
+}
+
+.nav-item {
+    list-style: none;
+    margin-left: 40px;
+
+
+    :last-child {
+        margin-right: 0;
+       }
+}
+
