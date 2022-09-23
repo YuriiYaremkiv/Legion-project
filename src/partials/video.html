@@ -1,0 +1,76 @@
+<section class="section">
+	<div class="container video">
+		<h2 class="video__title">WATCH THE VIDEO</h2>
+		<p class="video__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse fringilla
+			fringilla nisl congue congue. Maecenas nec condimentum libero, at elementum mauris. Phasellus eget nisi dapibus, ultricies nisl at, hendrerit risusuis ornare luctus id sollicitudin ante lobortis at.</p>
+
+		<svg width="60" height="60">
+			<use href="./images/icon.svg#icon-apple"></use>
+		</svg>
+
+		<svg width="60" height="60">
+			<use href="./images/icon.svg#icon-robot"></use>
+		</svg>
+
+		<picture class="video__img">
+			<!-- Desktop screen -->
+			<source
+			  media="(min-width: 1280px)"
+			  srcset="
+				./images/video/img-01_desk.webp    1x,
+				./images/video/img-01_desk@2x.webp 2x
+			  "
+			  type="image/webp"
+			/>
+			<source
+			  media="(min-width: 1280px)"
+			  srcset="
+				./images/video/img-01_desk.png     1x,
+				./images/video/img-01_desk@2x.png 2x
+			  "
+			  type="image/jpg"
+			/>
+			<!-- Tablet screen -->
+			<source
+			  media="(min-width: 768px)"
+			  srcset="
+				./images/video/img-01_tab.webp    1x,
+				./images/video/img-01_tab@2x.webp 2x
+			  "
+			  type="image/webp"
+			/>
+			<source
+			  media="(min-width: 768px)"
+			  srcset="
+				./images/video/img-01_tab.png    1x,
+				./images/video/img-01_tab@2x.png 2x
+			  "
+			  type="image/jpg"
+			/>
+			<!-- Mobile screen -->
+			<source
+			  media="(max-width: 767px)"
+			  srcset="
+				./images/video/img-01_mob.webp    1x,
+				./images/video/img-01_mob@2x.webp 2x
+			  "
+			  type="image/webp"
+			/>
+			<source
+			  media="(max-width: 767px)"
+			  srcset="
+				./images/video/img-01_mob.png    1x,
+				./images/video/img-01_mob@2x.png 2x
+			  "
+			  type="image/jpg"
+			/>
+			<img
+			  src="./images/video/img-01_desk.png"
+			  alt="Watch the Video"
+			  width="501"
+			  height="282"
+			  loading="lazy"
+			/>
+		  </picture>
+	</div>
+</section>
