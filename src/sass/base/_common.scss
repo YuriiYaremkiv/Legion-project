@@ -1,0 +1,25 @@
+body {
+	margin: 0;
+	
+	font-family: var(--font-main);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.21;
+	letter-spacing: 0.03em;
+	color: var(--main-txt-cl);
+}
+
+.section {
+	padding-bottom: 40px;
+	padding-top: 40px;
+   // - tablet: 768px;   разные падинги почти все
+	@media screen and (min-width: 768px) {
+	  padding-top: 80px;
+	  padding-bottom: 80px;
+	}
+	// - desktop: 1280px один падинг надо будет исправить
+	@media screen and (min-width: 1200px) {
+	  padding-top: 100px;
+	  padding-bottom: 100px;
+	}
+  }

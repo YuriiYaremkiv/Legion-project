@@ -1,12 +1,18 @@
-@import './common';
-@import './example';
-@import './team';
 //general
-@import './base/global';
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+
+//variables
 @import './utils/variables';
+
 //header
 @import './components/header';
 @import './components/logo';
 @import './components/navigation';
+
+//hero
+@import './components/hero';
+
 //footer
 @import './components/footer';
