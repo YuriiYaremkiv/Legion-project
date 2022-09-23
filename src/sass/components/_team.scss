@@ -1,8 +1,17 @@
+.team {
+    background-image: url(../images/team/team-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width:1280px) {
+        background-size: cover;
+    }
+}
+
 .team__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.2;
-    color: #000000;
     text-align: center;
 
     margin-top: 0;
@@ -22,7 +31,6 @@
     font-size: 14px;
     line-height: 1.71;
     text-align: center;
-    color: #000000;
 
     margin-left: auto;
     margin-right: auto;
@@ -98,7 +106,7 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
-    color: #FFFFFF;
+    color: var(--white-txt-bg-cl);
 
     margin-top: 0;
     margin-bottom: 12px;
@@ -108,7 +116,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--white-txt-bg-cl);
 
     margin-top: 0;
     margin-bottom: 0;
