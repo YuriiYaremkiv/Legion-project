@@ -1,0 +1,123 @@
+.team {
+    background-image: url(../images/team/team-back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width:1280px) {
+        background-size: cover;
+    }
+}
+
+.team__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    @media screen and (min-width:768px) {
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 80px;
+    }
+}
+
+.team__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    @media screen and (min-width:768px) {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+    @media screen and (min-width:1280px) {
+        margin-bottom: 80px;
+        max-width: 868px;
+    }
+}
+
+.team__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 24px;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media screen and (min-width:768px) {
+        flex-direction: row;
+        row-gap: 40px;
+        column-gap: 32px;
+    }
+    @media screen and (min-width:1280px) {
+        gap: 32px;
+    }
+}
+
+.team__item {
+    width: 280px;
+    padding: 16px 16px 12px 16px;
+    text-align: center;
+
+    background: linear-gradient(312.87deg, rgba(0, 197, 235, 0.5) -0.2%, rgba(181, 68, 254, 0.5) 112.66%), #06071B;
+    backdrop-filter: blur(17.5px);
+    border-radius: 15px;
+
+    &:nth-child(2) {
+        background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+    }
+    &:nth-child(3) {
+        background: linear-gradient(105.09deg, rgba(0, 197, 235, 0.5) -13.66%, rgba(181, 68, 254, 0.5) 104.34%), #06071B;
+    }
+
+    @media screen and (min-width:768px) {
+        width: calc((100% - 32px) / 2);
+        padding: 20px 20px 12px 20px;
+    }
+    @media screen and (min-width:1280px) {
+        width: calc((100% - 96px) / 4);
+        padding: 14px 12px 12px 12px;
+    }
+}
+
+.team__image {
+    display: block;
+    border-radius: 13px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.team__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    color: var(--white-txt-bg-cl);
+
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.team__profession {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--white-txt-bg-cl);
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
