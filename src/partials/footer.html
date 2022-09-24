@@ -3,10 +3,25 @@
         <h2 class="contact__title">CONTACT US</h2>
         <div class="contact__tumb">
             <!--start block "contact-us"-->
-            <form class="contact-us">
-                <input class="contact-us__input" type="text" placeholder="Name">
-                <input class="contact-us__input" type="text" placeholder="Email">
-                <textarea class="contact-us__textarea" name="" id="" placeholder="Message"></textarea>
+            <form class="contact-us"> 
+                <input class="contact-us__input" type="text" 
+                                                 name="input-name"
+                                                 placeholder="Name" 
+                                                 required 
+                                                 maxlength="30"
+                                                 pattern="^[a-zA-Z][a-zA-Z0-9-_\.\s]{2,30}$" 
+                                                 title="Name must contain 3-30 characters. You can only contain (letters A-Z, numbers 0-9)">
+                <input class="contact-us__input" type="email"
+                                                 name="input-email" 
+                                                 placeholder="Email"
+                                                 required
+                                                 title="Enter your email">
+                <textarea class="contact-us__textarea" name="input-text" 
+                                                       id="input-text" 
+                                                       placeholder="Message" 
+                                                       required
+                                                       minlength="10"
+                                                       title="Enter your message. Message must be at least 10 characters long"></textarea>
                 <button class="contact-us__button" type="submit">
                     <span class="contact-us__button-text">SUBMIT</span>
                 </button>
@@ -18,7 +33,7 @@
                 <!--start block "socials-block"-->
                 <ul class="socials-block">
                     <li class="socials-block__item">
-                        <a class="socials-block__link" href="#">
+                        <a class="socials-block__link" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer">
                             <svg class="socials-block__icon" width="40" height="40">
                                 <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-facebook"></use>
                                 <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-facebook-hovered"></use>
@@ -26,7 +41,7 @@
                         </a>
                     </li>
                     <li class="socials-block__item">
-                        <a class="socials-block__link" href="">
+                        <a class="socials-block__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                             <svg class="socials-block__icon" width="40" height="40">
                                 <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-twitter"></use>
                                 <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-twitter-hovered"></use>
@@ -34,7 +49,7 @@
                         </a>
                     </li>
                     <li class="socials-block__item">
-                        <a class="socials-block__link" href="">
+                        <a class="socials-block__link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                             <svg class="socials-block__icon" width="40" height="40">
                                 <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-linkedin"></use>
                                 <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-linkedin-hovered"></use>
@@ -59,6 +74,6 @@
 </section>
 <footer class="footer">
     <div class="container">
-            <p class="footer__copyrights">©&nbsp; 2019 GoIteens Template. All Rights Reserved</p>
+            <p class="footer__copyrights">© 2019 GoIteens Template. All Rights Reserved</p>
     </div>
 </footer>

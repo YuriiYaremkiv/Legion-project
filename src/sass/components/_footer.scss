@@ -1,66 +1,67 @@
 .contact {
     background-color: var(--dark-bg-cl);
-    background-image: url('../images/footer/ellipse20-480.png'), 
-                      url('../images/footer/ellipse19-480.png'),
-                      url('../images/footer/ellipse24-480.png'),
-                      url('../images/footer/ellipse23-480.png');
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: 94% -5%, 12% -10%, 50px 50px, 75% 75%;
 
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url('../images/footer/ellipse20-480@2x.png'), 
-                          url('../images/footer/ellipse19-480@2x.png'),
-                          url('../images/footer/ellipse24-480@2x.png'),
-                          url('../images/footer/ellipse23-480@2x.png');  
-    }
-
-    @media screen and (min-width: 768px) {
-        background-image: url('../images/footer/ellipse20-768.png'), 
-                          url('../images/footer/ellipse19-768.png'),
-                          url('../images/footer/ellipse24-768.png'),
-                          url('../images/footer/ellipse23-768.png');
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: 94% -5%, 12% -10%, 50px 50px, 75% 75%;
-
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../images/footer/ellipse20-768@2x.png'), 
-                              url('../images/footer/ellipse19-768@2x.png'),
-                              url('../images/footer/ellipse24-768@2x.png'),
-                              url('../images/footer/ellipse23-768@2x.png');  
-        }
-    }
-
-    @media screen and (min-width: 1280px) {
-        background-image: url('../images/footer/ellipse20-1280.png'), 
-                          url('../images/footer/ellipse19-1280.png'),
-                          url('../images/footer/ellipse24-1280.png'),
-                          url('../images/footer/ellipse23-1280.png');
-        background-repeat: no-repeat;
-        background-size: auto;
-        background-position: 94% -5%, 12% -10%, 50px 50px, 75% 75%;
-
-        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-            background-image: url('../images/footer/ellipse20-1280@2x.png'), 
-                              url('../images/footer/ellipse19-1280@2x.png'),
-                              url('../images/footer/ellipse24-1280@2x.png'),
-                              url('../images/footer/ellipse23-1280@2x.png');  
-        }
-    }
-
-    .container {
+        .container {
         padding-top: 40px;
         padding-bottom: 40px;
 
-        @media screen and (min-width: 768px) {
+        @media screen and (max-width: 767px) {  
+            background-image: url('../images/footer/ellipse20-480.png') , 
+                            url('../images/footer/ellipse19-480.png'),
+                            url('../images/footer/ellipse24-480.png'),
+                            url('../images/footer/ellipse23-480.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: -100% 10%, 100% 5%, 100% 120%, 50% 110%;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url('../images/footer/ellipse20-480@2x.png'), 
+                                url('../images/footer/ellipse19-480@2x.png'),
+                                url('../images/footer/ellipse24-480@2x.png'),
+                                url('../images/footer/ellipse23-480@2x.png');  
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
             padding-top: 74px;
             padding-bottom: 80px;
+
+
+            background-image: url('../images/footer/ellipse20-768.png'), 
+                              url('../images/footer/ellipse19-768.png'),
+                              url('../images/footer/ellipse24-768.png'),
+                              url('../images/footer/ellipse23-768.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 300% 5%, -200% -15%, 65% 75%, 35% 67%;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url('../images/footer/ellipse20-768@2x.png'), 
+                                  url('../images/footer/ellipse19-768@2x.png'),
+                                  url('../images/footer/ellipse24-768@2x.png'),
+                                  url('../images/footer/ellipse23-768@2x.png');  
+            }
         }
 
         @media screen and (min-width: 1280px) {
             padding-top: 80px;
             padding-bottom: 80px;
+
+
+            background-image: url('../images/footer/ellipse20-1280.png'), 
+                            url('../images/footer/ellipse19-1280.png'),
+                            url('../images/footer/ellipse24-1280.png'),
+                            url('../images/footer/ellipse23-1280.png');
+            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: 105% 55%, 77% 95%, 10% 0%, -5% 15%;
+
+            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+                background-image: url('../images/footer/ellipse20-1280@2x.png'), 
+                                url('../images/footer/ellipse19-1280@2x.png'),
+                                url('../images/footer/ellipse24-1280@2x.png'),
+                                url('../images/footer/ellipse23-1280@2x.png');  
+            }
         }
     }
 
@@ -127,6 +128,10 @@
     font-family: inherit;
     border: none;
     border-radius: 5px;
+
+    &:not(:placeholder-shown):required:invalid {
+        outline: 2px solid red;
+    }
 }
 
 .contact-us__input {
@@ -195,6 +200,7 @@
     color: var(--white-txt-bg-cl); 
     text-transform: uppercase;
     
+    background-color: transparent; /**/
     border-radius: 5px;
     border: none;
 
@@ -212,8 +218,8 @@
     }
 
     &::before {
-        width: 100%;
-        height: 100%;
+        width: 100.5%;
+        height: 100.5%;
         background-image: var(--gradient-bg-cl);
         background-size: cover;
         background-repeat: no-repeat;
@@ -236,6 +242,7 @@
     &:hover::after,
     &:focus::after {
         opacity: 1;
+        transform: translate(-50%, -50%);
     }    
 }
 
@@ -345,19 +352,17 @@
     text-align: center;
     color: var(--white-txt-bg-cl);
 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     @media screen and (min-width: 1280px) {
         margin-left: 0;
 
         text-align: left;
     }
-
-    transition: color 500ms linear;
-
+    
     &:hover,
     &:focus {
-        background: var(--gradient-bg-cl);
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+        color: #00C5EB;
     }
 }
 
@@ -389,3 +394,8 @@
         padding-left: 0;
     }
 }
+
+/*
+.container {
+    opacity: 0;
+}*/
