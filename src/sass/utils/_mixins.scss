@@ -1,0 +1,6 @@
+// Mixins
+
+@mixin section-video ($pt: 40px, $pb: 40px) {
+	padding-top: $pt;
+	padding-bottom: $pb;
+}
