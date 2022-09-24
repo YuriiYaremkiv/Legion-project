@@ -1,0 +1,12 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-dashicons_arrow-right-alt2" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M9.6 24l8-8-8-8 1.6-3.2 11.2 11.2-11.2 11.2-1.6-3.2z"></path>
+</symbol>
+<symbol id="icon-Burger" viewBox="0 0 52 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 2h48"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 16h48"></path>
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30h48"></path>
+</symbol>
+</defs>
+</svg>
