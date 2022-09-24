@@ -1,0 +1,93 @@
+.hero {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--white-txt-bg-cl);
+    height: 568px;
+    display: flex;
+    max-width: 480px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--dark-bg-cl);
+    // background-image: url(../images/hero/dark-tel1sm.png);
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;
+    }
+
+}
+
+.hero-container {
+    // position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.hero__main-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 12px;
+
+    @media screen and (min-width=768px) {
+        font-size: 40px;
+        line-height: 1.2;
+    }
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.22;
+    margin-bottom: 20px;
+
+    @media screen and (min-width=768px) {
+        font-size: 20px;
+        line-height: 1.2;
+        margin-bottom: 28px;
+    }
+}
+
+.hero__item {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 1.25;
+    margin-bottom: 16px;
+
+    @media screen and (min-width=768px) {
+        font-size: 16px;
+        line-height: 1.18;
+    }
+}
+
+.hero__item::before {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    left: -20px;
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/hero/dashicons_arrow-right-alt2.svg);
+}
+
+
+.hero-block {
+    position: relative;
+}
+
+.hero__img {
+    position: absolute;
+    height: 430px;
+    object-fit: contain;
+    bottom: 20px;
+    right: -20px;
+}
