@@ -1,5 +1,11 @@
 //general
-@import './base/global';
+@import './base/reset';
+@import './base/common';
+@import './base/container';
+
+@import './components/icon';
+
+//variables
 @import './utils/variables';
 @import './base/reset';
 
