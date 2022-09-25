@@ -1,0 +1,32 @@
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--main-bg);
+    color: aqua;
+    border: none;
+    background-color: transparent;
+    margin-left: auto;
+    transition: color var(--anim-slow) ;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+    
+    &:active {
+        color: var(--accent-color);
+    }
+    z-index: 150;
+}
+
+.menu-btn-icon {
+    fill: currentColor;
+    color: var(--main-bg);
+    color: aqua;
+    cursor: pointer;
+}
