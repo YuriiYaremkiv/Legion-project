@@ -1,4 +1,4 @@
-// general
+//general
 @import './base/reset';
 @import './base/common';
 @import './base/container';
@@ -29,5 +29,11 @@
 //team 
 @import './components/team';
 
+//reviews
+@import './components/reviews';
+
 //footer
 @import './components/footer';
+
+//modal
+@import './components/modal';

@@ -82,6 +82,19 @@
       <path d="M24.5006 14.6298H25.0006V14.1298V11.0007V10.5007H24.5006H21.6447C18.9529 10.5007 17.0597 12.797 17.0597 15.4994V16.7292H14.5019H14.0019V17.2292V20.1702V20.6702H14.5019H17.0597V28.9993V29.4993H17.5597H20.9302H21.4302V28.9993V20.6702H23.9623H24.3788L24.4541 20.2606L24.9944 17.3195L25.1028 16.7292H24.5026H21.4302V15.1669C21.4302 14.9752 21.4916 14.8202 21.5633 14.7227C21.6145 14.6531 21.6518 14.6342 21.6612 14.6298H24.5006ZM1.5 20C1.5 9.7826 9.7826 1.5 20 1.5C30.2174 1.5 38.5 9.7826 38.5 20C38.5 30.2174 30.2174 38.5 20 38.5C9.7826 38.5 1.5 30.2174 1.5 20Z" fill="#06071b" />
       <path d="M24.5007 14.1298H21.6448C21.3063 14.1298 20.9303 14.5751 20.9303 15.1669V17.2292H24.5027L23.9624 20.1702H20.9303V28.9993H17.5598V20.1702H14.502V17.2292H17.5598V15.4994C17.5598 13.0175 19.2816 11.0007 21.6448 11.0007H24.5007V14.1298Z" stroke="transparent" stroke-width="2" />
     </symbol>
+    <!-- burger menu without color-->
+    <symbol id="icon-burger" viewBox="0 0 52 32">
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 2h48"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 16h48"></path>
+      <path stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M2 30h48"></path>
+    </symbol>
+     <!-- burger menu with color-->
+    <symbol id="burger" width="26" height="16" viewBox="0 0 26 16" fill="none">
+     <path d="M1 1H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+     <path d="M1 8H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+     <path d="M1 15H25" stroke="white" stroke-width="2" stroke-linecap="round"/>
+
+   </symbol>
   </defs>
 </svg>
 
