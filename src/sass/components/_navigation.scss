@@ -1,14 +1,10 @@
-.container {
-    padding-top: 14px;
-    padding-bottom: 14px;
-}
 
 .nav {
     display: flex;
     // justify-content: space-between;
 }
 
-.nav-list {
+.nav__list {
     display: flex;
     justify-content: flex-end;
     margin-left: auto;
@@ -24,13 +20,16 @@
 
 }
 
-.nav-item {
+.nav__item {
     list-style: none;
     margin-left: 40px;
-
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
 
     :last-child {
         margin-right: 0;
-       }
+    }
+
 }
 

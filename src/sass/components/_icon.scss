@@ -1,0 +1,59 @@
+/**
+  |============================
+  | App icons
+  |============================
+*/
+
+.app-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+}
+
+.app-icon {
+  fill: #ffffff;
+}
+
+/**
+  |============================
+  | Socials icons
+  |============================
+*/
+
+.socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);  
+}
+
+.icon-regular {
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 0;
+  }
+}
+
+.icon-hovered {
+  opacity: 0;
+  transition: 400ms;
+
+  .socials-link:hover .socials-icons & {
+    opacity: 1;
+  }
+  .socials-link:active .socials-icons & {
+    opacity: 1;
+  }
+}

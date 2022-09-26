@@ -1,54 +1,79 @@
-<footer class="page-footer">
+<section class="contact">
     <div class="container">
-        <h2 class="page-footer__title">CONTACT US</h2>
-        <form class="contact-us">
-            <input class="contact-us__input" type="text" placeholder="Name">
-            <input class="contact-us__input" type="text" placeholder="Email">
-            <textarea class="contact-us__textarea" name="" id="" placeholder="Message"></textarea>
-            <button class="contact-us__button" type="submit">SUBMIT</button>
-        </form>
-        <strong class="page-footer__subtitle">Get in touch with us</strong>
-        <p class="page-footer__desc">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
-        <!--start block "socials-block"-->
-        <ul class="socials-block">
-            <li class="socials-block__item">
-                <a class="socials-block__link" href="">
-                    <svg class="socials-block__icon" width="40" height="40">
-                        <use class="socials-block__icon-default" href="./images/sprite/icons.svg#icon-facebook"></use>
-                        <use class="socials-block__icon-hover" href="#"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-block__item">
-                <a class="socials-block__link" href="">
-                    <svg class="socials-block__icon" width="40" height="40">
-                        <use class="socials-block__icon-hover" href="#"></use>
-                    </svg>
-                </a>
-            </li>
-            <li class="socials-block__item">
-                <a class="socials-block__link" href="">
-                    <svg class="socials-block__icon" width="40" height="40">
-                        <use href="#"></use>
-                    </svg>
-                </a>
-            </li>
-        </ul>
-        <!--end block "socials-block"-->
-        <!--start block "contact-nav"-->
-        <ul class="contact-nav">
-            <li class="contact-nav__item">
-                <a class="contact-nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
-            </li>
-            <li class="contact-nav__item">
-                <a class="contact-nav__link" href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
-            </li>
-        </ul>
-        <!--end block "contact-nav"-->
-    </div>
-    <div class="footer-copyrights">
-        <div class="container">
-            <p class="footer-copyrights_desc">©&nbsp; 2019 GoIteens Template. All Rights Reserved</p>
+        <h2 class="contact__title">CONTACT US</h2>
+        <div class="contact__tumb">
+            <!--start block "contact-us"-->
+            <form class="contact-us"> 
+                <input class="contact-us__input" type="text" 
+                                                 name="input-name"
+                                                 placeholder="Name" 
+                                                 required 
+                                                 maxlength="30"
+                                                 pattern="^[a-zA-Z][a-zA-Z0-9-_\.\s]{2,30}$" 
+                                                 title="Name must contain 3-30 characters. You can only contain (letters A-Z, numbers 0-9)">
+                <input class="contact-us__input" type="email"
+                                                 name="input-email" 
+                                                 placeholder="Email"
+                                                 required
+                                                 title="Enter your email">
+                <textarea class="contact-us__textarea" name="input-text" 
+                                                       id="input-text" 
+                                                       placeholder="Message" 
+                                                       required
+                                                       minlength="10"
+                                                       title="Enter your message. Message must be at least 10 characters long"></textarea>
+                <button class="contact-us__button" type="submit">
+                    <span class="contact-us__button-text">SUBMIT</span>
+                </button>
+            </form>
+            <!--end block "contact-us"-->
+            <div class="contact__block">
+                <strong class="contact__subtitle">Get in touch with us</strong>
+                <p class="contact__desc">Nunc urna est, tristique et varius at, pharetra nec enim. Quisque rhoncus lacus fringilla nulla sollicitudin tristique.</p>
+                <!--start block "socials-block"-->
+                <ul class="socials-block">
+                    <li class="socials-block__item">
+                        <a class="socials-block__link" href="https://uk-ua.facebook.com/" target="_blank" rel="noopener noreferrer">
+                            <svg class="socials-block__icon" width="40" height="40">
+                                <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-facebook"></use>
+                                <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-facebook-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-block__item">
+                        <a class="socials-block__link" href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+                            <svg class="socials-block__icon" width="40" height="40">
+                                <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-twitter"></use>
+                                <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-twitter-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="socials-block__item">
+                        <a class="socials-block__link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <svg class="socials-block__icon" width="40" height="40">
+                                <use class="socials-block__icon-default" href="./images/icon-footer.svg#icon-linkedin"></use>
+                                <use class="socials-block__icon-hover" href="./images/icon-footer.svg#icon-linkedin-hovered"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <!--end block "socials-block"-->
+                <!--start block "contact-nav"-->
+                <ul class="contact-nav">
+                    <li class="contact-nav__item">
+                        <a class="contact-nav__link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="contact-nav__item">
+                        <a class="contact-nav__link" href="mailto:goIteens@gmail.com">goIteens@gmail.com</a>
+                    </li>
+                </ul>
+                <!--end block "contact-nav"-->
+            </div>
         </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+            <p class="footer__copyrights">© 2019 GoIteens Template. All Rights Reserved</p>
     </div>
 </footer>

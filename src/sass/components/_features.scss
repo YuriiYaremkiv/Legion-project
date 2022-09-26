@@ -1,0 +1,184 @@
+// ====== Features section =======
+.features {
+	@include section-video;
+	position: relative;
+
+	background-color: var(--white-txt-bg-cl);
+
+	background-image: 
+	url(../images/features/glow-1_mob.png), 
+	url(../images/features/glow-2_mob.png);
+	background-size: 100%, 100%;
+	background-position: bottom, top;
+	background-repeat: no-repeat;
+
+	@media screen and (min-width: 768px) {
+		@include section-video (40px, 80px);
+
+		background-image: 
+	url(../images/features/glow-1_tab.png), 
+	url(../images/features/glow-2_tab.png);
+	}
+
+	@media screen and (min-width: 1280px) {
+		@include section-video (40px, 161px);
+		background-image: 
+	url(../images/features/glow-1_desk.png), 
+	url(../images/features/glow-2_desk.png);
+	background-size: 100%, 50%;
+	background-position: bottom, right top;
+	}
+}
+
+.features__desc {
+	text-align: center;
+}
+
+.features__title {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.2;
+	text-transform: uppercase;
+
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		font-size: 24px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		margin-bottom: 80px;
+	}
+}
+
+.features__text {
+	max-width: 280px;
+
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 704px;
+
+		font-size: 16px;
+		line-height: 1.5;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 886px;
+		
+		margin-bottom: 141px;
+	}
+}
+
+.features__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	margin-bottom: 24px;
+
+	position: relative;
+
+	@media screen and (min-width: 768px) {
+		align-items: end;
+		gap: 80px;
+
+		margin-bottom: 80px;
+		padding-right: 60px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: start;
+
+		padding-left: 140px;
+		padding-right: 133px;
+	}
+}
+
+.features__img {
+	margin-bottom: 16px;
+
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		top: 0px;
+		left: -32px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		top: -61px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.features__list {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+
+	@media screen and (min-width: 768px) {
+		gap: 80px;
+	}	
+}
+
+.features__list--bottom {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+
+	@media screen and (min-width: 768px) {
+		gap: 87px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		display: flex;
+		justify-content: space-between;
+
+		padding-left: 140px;
+		padding-right: 133px;
+	}
+}
+
+.features__item {
+	position: relative;
+
+	padding-left: 40px;
+
+	&::before {
+		content: "";
+		width: 28px;
+		height: 28px;
+
+		display: block;
+
+		position: absolute;
+		top: 0;
+		left: 0px;
+
+		background-image: url(../images/gear.svg);
+	}	
+}
+
+.features__item--title {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.5;
+
+	margin-bottom: 13px;
+}
+
+.features__item--text {
+	max-width: 220px;
+
+	@media screen and (min-width: 768px) {
+		max-width: 238px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		max-width: 220px;
+	}
+}

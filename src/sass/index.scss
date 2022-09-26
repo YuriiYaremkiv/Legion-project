@@ -3,18 +3,31 @@
 @import './base/common';
 @import './base/container';
 
+@import './components/icon';
+
 //variables
 @import './utils/variables';
+@import './utils/mixins';
+@import './utils/videotube';
+@import './base/reset';
 
 //header
 @import './components/header';
 @import './components/logo';
 @import './components/navigation';
+@import './components/menu';
 
 //hero
 @import './components/hero';
 
+// features
+@import './components/features';
+
+// video
+@import './components/video';
+
+//team 
+@import './components/team';
+
 //footer
 @import './components/footer';
-
-
