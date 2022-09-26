@@ -1,47 +1,50 @@
 // ====== Section Video ======
 .video {
-	@include section-video;
-
 	background-color: var(--dark-bg-cl);
-	
-	background-image: url(../images/video/glow-big_mob1.png);
-	background-size: 410px;
-	background-position: bottom;
-	background-repeat: no-repeat;
+	.container {
+		@include section-video;
 
-	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-		background-image: url(../images/video/glow-big_mob1@2x.png);
-		background-size: 380px;
-	}
+		margin: 0 auto;
 
-	@media screen and (min-width: 768px) {
-		@include section-video (80px, 46px);
+		background-image: url(../images/video/glow-big_mob1.png);
+		background-size: 410px;
+		background-position: 50% 105%;
+		background-repeat: no-repeat;
 
-		background-image: url(../images/video/glow-big_tab.png), 
-		url(../images/video/glow-s_tab.png);
-		background-position: bottom, left top;
-		background-size: 611px, 390px;
-
-		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-			background-image: url(../images/video/glow-big_tab@2x.png), 
-			url(../images/video/glow-s_tab@2x.png);
-			background-size: 611px, 390px;
+		@media (min-device-pixel-ratio: 2), 
+			(min-resolution: 192dpi), 
+			(min-resolution: 2dppx) {
+			background-image: url(../images/video/glow-big_mob1@2x.png);
+			background-size: 380px;
 		}
-	}
 
-	@media screen and (min-width: 1280px) {
-		@include section-video (60px, 60px);
+		@media screen and (min-width: 768px) {
+			@include section-video (80px, 40px);
 
-		background-image: url(../images/video/glow-big_desk.png), 
-		url(../images/video/glow-s_desk.png);
-		background-position: right bottom, 20% top;
-		background-size: 678px, 414px;
+			background-image: url(../images/video/glow-big_tab.png), 
+							  url(../images/video/glow-s_tab.png);
+			background-position: 45% 250%, left top;
+			background-size: auto;
 
-		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-			background-image: url(../images/video/glow-big_desk@2x.png), 
-			url(../images/video/glow-s_desk@2x.png);
-			background-position: right bottom, 150px top;
-			background-size: 735px, 390px;
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background-image: url(../images/video/glow-big_tab@2x.png), 
+								  url(../images/video/glow-s_tab@2x.png);	
+			}
+		}
+
+		@media screen and (min-width: 1280px) {
+			@include section-video (60px, 60px);
+
+			background-image: url(../images/video/glow-big_desk.png), 
+							  url(../images/video/glow-s_desk.png);
+			background-position: right bottom, 18% 5%;
+			background-size: auto;
+
+			@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+				background-image: url(../images/video/glow-big_desk@2x.png), 
+								  url(../images/video/glow-s_desk@2x.png);
+				background-position: right bottom, 150px top;
+			}
 		}
 	}
 }

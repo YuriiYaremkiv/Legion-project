@@ -1,32 +1,52 @@
 // ====== Features section =======
 .features {
-	@include section-video;
 	position: relative;
 
 	background-color: var(--white-txt-bg-cl);
+	
+	@include section-video;
 
 	background-image: 
-	url(../images/features/glow-1_mob.png), 
-	url(../images/features/glow-2_mob.png);
+				url(../images/features/glow-1_mob.png), 
+				url(../images/features/glow-2_mob.png);
 	background-size: 100%, 100%;
-	background-position: bottom, top;
+	background-position: left 140%, left -50%;
 	background-repeat: no-repeat;
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: 
+						url(../images/features/glow-1_mob@2x.png), 
+						url(../images/features/glow-2_mob@2x.png);
+	}
 
 	@media screen and (min-width: 768px) {
 		@include section-video (40px, 80px);
 
 		background-image: 
-	url(../images/features/glow-1_tab.png), 
-	url(../images/features/glow-2_tab.png);
+						url(../images/features/glow-1_tab.png), 
+						url(../images/features/glow-2_tab.png);
+		background-position: 100% 200%, 100% 250%;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: 
+						url(../images/features/glow-1_tab@2x.png), 
+						url(../images/features/glow-2_tab@2x.png);	
+		}
 	}
 
 	@media screen and (min-width: 1280px) {
 		@include section-video (40px, 161px);
 		background-image: 
-	url(../images/features/glow-1_desk.png), 
-	url(../images/features/glow-2_desk.png);
-	background-size: 100%, 50%;
-	background-position: bottom, right top;
+						url(../images/features/glow-1_desk.png), 
+						url(../images/features/glow-2_desk.png);
+	
+		background-position: 100% -20%, 100% 100%;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: 
+						url(../images/features/glow-1_desk@2x.png), 
+						url(../images/features/glow-2_desk@2x.png);
+		}
 	}
 }
 
@@ -75,6 +95,7 @@
 .features__wrapper {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 24px;
 
 	margin-bottom: 24px;
@@ -127,10 +148,12 @@
 
 .features__list--bottom {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
 	gap: 24px;
 
 	@media screen and (min-width: 768px) {
+		justify-content: start;
 		gap: 87px;
 	}
 
