@@ -1,14 +1,12 @@
 .testimonials {
-    padding-top: 0;
     padding-bottom: 40px;
-    // background-image: url(../images/reviews/vector-center.png), url(../images/reviews/vector-right.png), url(../images/reviews/vector-left.png);
-    // background-repeat: no-repeat;
-    // background-position: center center, top right, bottom left;
-    // background-size: 100%, 600px, 600px;
+    background-image: url(../images/reviews/vector-center.png), url(../images/reviews/vector-right.png), url(../images/reviews/vector-left.png);
+    background-size: 100%, 600px, 600px;
+    background-position: center center, 100% -80px, 0 200px;
+    background-repeat: no-repeat;
 
     @media screen and (min-width:768px) {
         padding-bottom: 60px;
-        // background-size: 100%, 300px, 300px;
     }
 
     @media screen and (min-width:1280px) {

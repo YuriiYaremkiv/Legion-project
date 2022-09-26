@@ -1,10 +1,12 @@
 .team {
-    // background-image: url(../images/team/vector-center.png);
+    background-image: url(../images/team/vector-left.png), url(../images/team/vector-right.png);
+    background-size: 800px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -100px, center 50%;
+    padding-bottom: 0;
 
-    @media screen and (min-width:1280px) {
-        background-size: cover;
+    @media screen and (min-width:768px) {
+        background-position: 0 0, 100% -100px;
     }
 }
 
