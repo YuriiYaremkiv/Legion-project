@@ -4,20 +4,46 @@
         <nav class="nav">
             <a class="header-logo" href="./index.html">Mobileapp</a>
             <ul class="nav__list">
-                <li class="nav__item">HOME</li>
-                <li class="nav__item">FEATURES</li>
-                <li class="nav__item">TEAM</li>
-                <li class="nav__item">TESTIMONIALS</li>
-                <li class="nav__item">CONTACT</li>
+                <li class="nav__item">
+                    <a class="nav__link" href="./index.html">HOME</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#features">FEATURES</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#team">TEAM</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="">TESTIMONIALS</a>
+                </li>
+                <li class="nav__item">
+                    <a class="nav__link" href="#contact">CONTACT</a>
+                </li>
             </ul>
             <button class="menu-btn js-open-menu" type="button"
                aria-expanded="false"
                aria-controls="mobile-menu">
-               <svg class="menu-btn-icon" width="40" height="40">
+               <svg class="menu-btn-icon" width="24" height="14">
                   <use href="./images/icon.svg#icon-Burger"></use>
                </svg>
             </button>
         </nav>
     </div>
 </header>
+<div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-btn menu-toggle js-close-menu">
+        <svg class="menu-btn-icon" width="32" height="32">
+            <use href="./images/icon.svg#icon-close"></use>
+        </svg>
+    </button>
+
+    <a class="header-logo" href="./index.html">Mobileapp</a>
+    <ul class="mobile-nav">
+        <li class="mobile-link"><a href="./index.html" class="link mobile-active">HOME</a></li>
+        <li class="mobile-link"><a href="./#features" class="link">FEATURES</a></li>
+        <li class="mobile-link"><a href="./#team" class="link">TEAM</a></li>
+        <li class="mobile-link"><a href="" class="link">TESTIMONIALS</a></li>
+        <li class="mobile-link"><a href="./#contact" class="link">CONTACT</a></li>
+    </ul>
+</div>
 
