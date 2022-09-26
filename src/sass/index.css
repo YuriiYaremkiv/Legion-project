@@ -298,10 +298,12 @@ button {
 .menu-btn {
   width: 32px;
   height: 32px;
+
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+
   align-items: center;
   border: none;
   background-color: transparent;
@@ -409,6 +411,7 @@ button {
   overflow: hidden;
   background-repeat: no-repeat;
   background-image: url(../images/hero/Маленький-градієнт-1sm.png), url(../images/hero/Маленький-радієнт-1sm.png);
+
   background-position: right -10px bottom -100px, right 2px bottom -150px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
@@ -530,6 +533,7 @@ button {
 @media screen and (min-width: 1280px) {
   .hero__button {
     left: 16px;
+
   }
 }
 .hero__button::after, .hero__button::before {
@@ -649,16 +653,29 @@ button {
   padding-bottom: 40px;
   position: relative;
   background-color: var(--white-txt-bg-cl);
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-image: url(../images/features/glow-1_mob.png), url(../images/features/glow-2_mob.png);
   background-size: 100%, 100%;
-  background-position: bottom, top;
+  background-position: left 140%, left -50%;
   background-repeat: no-repeat;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .features {
+    background-image: url(../images/features/glow-1_mob@2x.png), url(../images/features/glow-2_mob@2x.png);
+  }
 }
 @media screen and (min-width: 768px) {
   .features {
     padding-top: 40px;
     padding-bottom: 80px;
     background-image: url(../images/features/glow-1_tab.png), url(../images/features/glow-2_tab.png);
+    background-position: 100% 200%, 100% 250%;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features {
+    background-image: url(../images/features/glow-1_tab@2x.png), url(../images/features/glow-2_tab@2x.png);
   }
 }
 @media screen and (min-width: 1280px) {
@@ -666,8 +683,12 @@ button {
     padding-top: 40px;
     padding-bottom: 161px;
     background-image: url(../images/features/glow-1_desk.png), url(../images/features/glow-2_desk.png);
-    background-size: 100%, 50%;
-    background-position: bottom, right top;
+    background-position: 100% -20%, 100% 100%;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .features {
+    background-image: url(../images/features/glow-1_desk@2x.png), url(../images/features/glow-2_desk@2x.png);
   }
 }
 
@@ -769,6 +790,7 @@ button {
 
 .features__list--bottom {
   display: flex;
+
   flex-wrap: wrap;
   gap: 24px;
 }
@@ -823,49 +845,51 @@ button {
 }
 
 .video {
+  background-color: var(--dark-bg-cl);
+}
+.video .container {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: var(--dark-bg-cl);
+  margin: 0 auto;
   background-image: url(../images/video/glow-big_mob1.png);
   background-size: 410px;
-  background-position: bottom;
+  background-position: 50% 105%;
   background-repeat: no-repeat;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  .video {
+  .video .container {
     background-image: url(../images/video/glow-big_mob1@2x.png);
     background-size: 380px;
   }
 }
 @media screen and (min-width: 768px) {
-  .video {
+  .video .container {
     padding-top: 80px;
     padding-bottom: 46px;
     background-image: url(../images/video/glow-big_tab.png), url(../images/video/glow-s_tab.png);
-    background-position: bottom, left top;
-    background-size: 611px, 390px;
+    background-position: 45% 250%, left top;
+    background-size: auto;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .video {
+  .video .container {
     background-image: url(../images/video/glow-big_tab@2x.png), url(../images/video/glow-s_tab@2x.png);
-    background-size: 611px, 390px;
   }
 }
 @media screen and (min-width: 1280px) {
-  .video {
+  .video .container {
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url(../images/video/glow-big_desk.png), url(../images/video/glow-s_desk.png);
     background-position: right bottom, 20% top;
     background-size: 678px, 414px;
+
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .video {
+  .video .container {
     background-image: url(../images/video/glow-big_desk@2x.png), url(../images/video/glow-s_desk@2x.png);
     background-position: right bottom, 150px top;
-    background-size: 735px, 390px;
   }
 }
 
