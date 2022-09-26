@@ -1,6 +1,5 @@
 const swiper = new Swiper('.swiper', {
-    speed: 400,
-    spaceBetween: 100,
+    speed: 700,
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -8,5 +7,8 @@ const swiper = new Swiper('.swiper', {
     // If we need pagination
     pagination: {
         el: '.swiper-pagination',
+    },
+    autoplay: {
+        delay: 5000,
     },
 });

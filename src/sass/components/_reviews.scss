@@ -1,11 +1,18 @@
 .testimonials {
     padding-top: 0;
-    background-image: url(../images/reviews/reviews-back.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    padding-bottom: 40px;
+    // background-image: url(../images/reviews/vector-center.png), url(../images/reviews/vector-right.png), url(../images/reviews/vector-left.png);
+    // background-repeat: no-repeat;
+    // background-position: center center, top right, bottom left;
+    // background-size: 100%, 600px, 600px;
 
-    @media screen and (min-width:1200px) {
-        background-size: cover;
+    @media screen and (min-width:768px) {
+        padding-bottom: 60px;
+        // background-size: 100%, 300px, 300px;
+    }
+
+    @media screen and (min-width:1280px) {
+        padding-bottom: 80px;
     }
 }
 .testimonials__title {
@@ -22,6 +29,7 @@
 
 .testimonials__card {
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .testimonials__image {
@@ -63,4 +71,12 @@
         font-size: 16px;
         line-height: 1.5;
     }
+}
+
+//swiper
+.swiper-pagination-bullet-active {
+    background: #06071B !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 0 !important;
 }
