@@ -1,14 +1,13 @@
 .menu-btn {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     padding: 0;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
 
-    color: var(--main-bg);
-    color: aqua;
     border: none;
     background-color: transparent;
     margin-left: auto;
@@ -29,3 +28,64 @@
     cursor: pointer;
 }
 
+.menu-container {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 16px 20px;
+    background-color: var(--second-dark-color);
+    z-index: 200;
+
+    background-repeat: no-repeat;
+    background-image: url(../images/hero/menu/menu-gr.png);
+    background-position: bottom;
+    background-size: cover;
+
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+
+    &.is-open {
+        display: block;
+        transform: translateX(0);
+    }
+}
+
+.menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 20px;
+}
+
+.mobile-nav {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.mobile-nav .link {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.21;
+    display: block;
+    color: var(--white-txt-bg-cl);
+}
+
+.mobile-link {
+    margin-bottom: 16px;
+    height: 59px;
+}
+
+.mobile-link:active {
+    background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}

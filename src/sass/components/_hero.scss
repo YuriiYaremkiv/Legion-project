@@ -15,11 +15,7 @@
 
     @media screen and (min-width: 1280px) {
         height: 684px;
-        
     }
-
-    
-
 }
 
 .hero-container {
@@ -33,7 +29,7 @@
     background-image: 
     url(../images/hero/Маленький-градієнт-1sm.png),
     url(../images/hero/Маленький-радієнт-1sm.png);
-    background-position: center, right 10px bottom -100px;
+    background-position: right -10px bottom -100px, right 2px bottom -150px ;
 
 
     @media (min-device-pixel-ratio: 2),
@@ -47,15 +43,32 @@
         width: 768px;
         height: 580px;
         overflow: visible;
-        background-position: left 300px top 300px, right 10px bottom -100px;
+        background-position: top;
         background-image: url(../images/hero/1-elementmd.png),
         url(../images/hero/2-elementmd.png),
         url(../images/hero/3-elementmd.png),
         url(../images/hero/4-elementmd.png),
         url(../images/hero/5-elementmd.png),
         url(../images/hero/6-elementmd.png),
-        url(../images/hero/7-elementmd.png);
-        background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0;
+        url(../images/hero/7-elementmd.png),
+        url(../images/hero/Градієнт-tabl.png),
+        url(../images/hero/small-gr-tabl.png);
+
+        background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0, right -20px bottom -100px, top 50px left 5px, right 207px bottom -16px;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: url(../images/hero/1-elementmd@2x.png),
+        url(../images/hero/2-elementmd@2x.png),
+        url(../images/hero/3-elementmd@2x.png),
+        url(../images/hero/4-elementmd@2x.png),
+        url(../images/hero/5-elementmd@2x.png),
+        url(../images/hero/6-elementmd@2x.png),
+        url(../images/hero/7-elementmd@2x.png),
+        url(../images/hero/Градієнт-tabl@2x.png),
+        url(../images/hero/small-gr-tabl@2x.png);
+        }
     }
 
     @media screen and (min-width: 1280px) {
@@ -69,14 +82,28 @@
         url(../images/hero/4-elementlg.png),
         url(../images/hero/5-elementlg.png),
         url(../images/hero/6-elementlg.png),
-        url(../images/hero/7-elementlg.png);
+        url(../images/hero/7-elementlg.png),
+        url(../images/hero/Розпилення-desk.png),
+        url(../images/hero/small-gr-tabl.png);
 
-        background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px
+        background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px, right -60px bottom -90px, top 100px left -5px;
 
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: url(../images/hero/1-elementlg@2x.png),
+        url(../images/hero/2-elementlg@2x.png),
+        url(../images/hero/3-elementlg@2x.png),
+        url(../images/hero/4-elementlg@2x.png),
+        url(../images/hero/5-elementlg@2x.png),
+        url(../images/hero/6-elementlg@2x.png),
+        url(../images/hero/7-elementlg@2x.png),
+        url(../images/hero/Розпилення-desk@2x.png),
+        url(../images/hero/small-gr-tabl@2x.png);
+        }
     }
-
-
 }
+
 
 .hero__main-title {
     font-weight: 700;
@@ -146,17 +173,24 @@
 
 
 .hero__button {
-    position: relative;
+    position: absolute;
+    bottom: 122px;
+    left: 130px;
 
     display: block;
     min-width: 150px;
     min-height: 42px;
 
-    margin-left: 120px;
+    // margin-left: 120px;
     padding: 11px 59px 12px 59px;
 
     @media screen and (min-width: 768px) {
         margin-left: 0;
+        left: 32px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        left: 16px;
     }
 
     font-weight: 700;
@@ -213,7 +247,6 @@
 .hero__img-second {
     position: absolute;
     object-fit: contain;
-
 }
 
 .hero__img{
@@ -239,9 +272,7 @@
     @media screen and (min-width: 1280px) {
         width: 430px;
         height: 460px;
-        
     }
-
 }
 
 .hero__img-second {
@@ -267,6 +298,27 @@
 }
 
 .block {
-    height: 60px;
+    display: none;
     background-color: var(--white-txt-bg-cl);
+
+    background-image: url(../images/hero/shadow-desk.png);
+    background-repeat: no-repeat;
+    background-position: right 100px bottom;
+
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx){
+        background-image: url
+    }
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        height: 60px;
+        background-position: right bottom;
+    }
+
+    @media screen and (min-width: 1280px) {
+        background-position: right 60px bottom;
+        
+    }
 }

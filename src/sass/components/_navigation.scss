@@ -1,7 +1,7 @@
 
 .nav {
     display: flex;
-    // justify-content: space-between;
+    align-items: center;
 }
 
 .nav__list {
@@ -23,6 +23,10 @@
 .nav__item {
     list-style: none;
     margin-left: 40px;
+}
+
+.nav__link {
+    display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.25;

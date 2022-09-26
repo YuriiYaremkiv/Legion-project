@@ -140,6 +140,7 @@ body {
   --gradient-bg-cl:linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
   --light-bg-cl: #F6FDFE;
   --dark-bg-cl: #06071B;
+  --second-dark-color: #07081C;
   /* Font */
   --font-main: "Inter", sans-serif;
   --font-secondary: "Montserrat", sans-serif;
@@ -236,59 +237,20 @@ button {
 }
 
 .header {
-  padding: 0;
-  position: relative;
-}
-
-.header-container {
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 14px;
-  padding-bottom: 14px;
-  position: absolute;
   background: linear-gradient(90.03deg, rgba(0, 197, 235, 0.3) -1.97%, rgba(181, 68, 254, 0.3) 89.43%);
-  max-width: 480px;
+  position: absolute;
   width: 100%;
   -webkit-backdrop-filter: blur(17.5px);
           backdrop-filter: blur(17.5px);
   top: 20px;
-  height: 68px;
   z-index: 100;
   margin-left: auto;
   margin-right: auto;
-  bottom: 0;
-}
-@media screen and (min-width: 768px) {
-  .header-container {
-    max-width: 768px;
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .header-container {
-    max-width: 1280px;
-    padding-left: 16px;
-    padding-right: 16px;
-    top: 26px;
-  }
 }
 
-.menu-btn {
-  width: 26px;
-  height: 16px;
-  padding: 0;
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-  background-color: transparent;
-}
-@media screen and (min-width: 768px) {
-  .menu-btn {
-    display: none;
-  }
+.header-container {
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 
 .header-logo {
@@ -303,6 +265,7 @@ button {
 
 .nav {
   display: flex;
+  align-items: center;
 }
 
 .nav__list {
@@ -319,24 +282,29 @@ button {
 .nav__item {
   list-style: none;
   margin-left: 40px;
+}
+
+.nav__link {
+  display: inline-block;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.25;
   color: var(--white-txt-bg-cl);
 }
-.nav__item :last-child {
+.nav__link :last-child {
   margin-right: 0;
 }
 
 .menu-btn {
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
+
   padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-bg);
-  color: aqua;
+
+  align-items: center;
   border: none;
   background-color: transparent;
   margin-left: auto;
@@ -355,6 +323,66 @@ button {
 .menu-btn-icon {
   fill: currentColor;
   cursor: pointer;
+}
+
+.menu-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px 20px;
+  background-color: var(--second-dark-color);
+  z-index: 200;
+  background-repeat: no-repeat;
+  background-image: url(../images/hero/menu/menu-gr.png);
+  background-position: bottom;
+  background-size: cover;
+}
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
+}
+.menu-container.is-open {
+  display: block;
+  transform: translateX(0);
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.mobile-nav {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.mobile-nav .link {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.21;
+  display: block;
+  color: var(--white-txt-bg-cl);
+}
+
+.mobile-link {
+  margin-bottom: 16px;
+  height: 59px;
+}
+
+.mobile-link:active {
+  background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .hero {
@@ -383,7 +411,8 @@ button {
   overflow: hidden;
   background-repeat: no-repeat;
   background-image: url(../images/hero/Маленький-градієнт-1sm.png), url(../images/hero/Маленький-радієнт-1sm.png);
-  background-position: center, right 10px bottom -100px;
+
+  background-position: right -10px bottom -100px, right 2px bottom -150px;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-container {
@@ -395,17 +424,27 @@ button {
     width: 768px;
     height: 580px;
     overflow: visible;
-    background-position: left 300px top 300px, right 10px bottom -100px;
-    background-image: url(../images/hero/1-elementmd.png), url(../images/hero/2-elementmd.png), url(../images/hero/3-elementmd.png), url(../images/hero/4-elementmd.png), url(../images/hero/5-elementmd.png), url(../images/hero/6-elementmd.png), url(../images/hero/7-elementmd.png);
-    background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0;
+    background-position: top;
+    background-image: url(../images/hero/1-elementmd.png), url(../images/hero/2-elementmd.png), url(../images/hero/3-elementmd.png), url(../images/hero/4-elementmd.png), url(../images/hero/5-elementmd.png), url(../images/hero/6-elementmd.png), url(../images/hero/7-elementmd.png), url(../images/hero/Градієнт-tabl.png), url(../images/hero/small-gr-tabl.png);
+    background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0, right -20px bottom -100px, top 50px left 5px, right 207px bottom -16px;
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../images/hero/1-elementmd@2x.png), url(../images/hero/2-elementmd@2x.png), url(../images/hero/3-elementmd@2x.png), url(../images/hero/4-elementmd@2x.png), url(../images/hero/5-elementmd@2x.png), url(../images/hero/6-elementmd@2x.png), url(../images/hero/7-elementmd@2x.png), url(../images/hero/Градієнт-tabl@2x.png), url(../images/hero/small-gr-tabl@2x.png);
   }
 }
 @media screen and (min-width: 1280px) {
   .hero-container {
     width: 1280px;
     height: 684px;
-    background-image: url(../images/hero/1-elementlg.png), url(../images/hero/2-elementlg.png), url(../images/hero/3-elementlg.png), url(../images/hero/4-elementlg.png), url(../images/hero/5-elementlg.png), url(../images/hero/6-elementlg.png), url(../images/hero/7-elementlg.png);
-    background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px;
+    background-image: url(../images/hero/1-elementlg.png), url(../images/hero/2-elementlg.png), url(../images/hero/3-elementlg.png), url(../images/hero/4-elementlg.png), url(../images/hero/5-elementlg.png), url(../images/hero/6-elementlg.png), url(../images/hero/7-elementlg.png), url(../images/hero/Розпилення-desk.png), url(../images/hero/small-gr-tabl.png);
+    background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px, right -60px bottom -90px, top 100px left -5px;
+  }
+}
+@media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: url(../images/hero/1-elementlg@2x.png), url(../images/hero/2-elementlg@2x.png), url(../images/hero/3-elementlg@2x.png), url(../images/hero/4-elementlg@2x.png), url(../images/hero/5-elementlg@2x.png), url(../images/hero/6-elementlg@2x.png), url(../images/hero/7-elementlg@2x.png), url(../images/hero/Розпилення-desk@2x.png), url(../images/hero/small-gr-tabl@2x.png);
   }
 }
 
@@ -468,11 +507,12 @@ button {
   position: relative;
 }
 .hero__button {
-  position: relative;
+  position: absolute;
+  bottom: 122px;
+  left: 130px;
   display: block;
   min-width: 150px;
   min-height: 42px;
-  margin-left: 120px;
   padding: 11px 59px 12px 59px;
   font-weight: 700;
   font-size: 16px;
@@ -487,6 +527,13 @@ button {
 @media screen and (min-width: 768px) {
   .hero__button {
     margin-left: 0;
+    left: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .hero__button {
+    left: 16px;
+
   }
 }
 .hero__button::after, .hero__button::before {
@@ -577,11 +624,33 @@ button {
 }
 
 .block {
-  height: 60px;
+  display: none;
   background-color: var(--white-txt-bg-cl);
+  background-image: url(../images/hero/shadow-desk.png);
+  background-repeat: no-repeat;
+  background-position: right 100px bottom;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .block {
+    background-image: url;
+  }
+}
+@media screen and (min-width: 768px) {
+  .block {
+    display: block;
+    height: 60px;
+    background-position: right bottom;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .block {
+    background-position: right 60px bottom;
+  }
 }
 
 .features {
+  padding-top: 40px;
+  padding-bottom: 40px;
   position: relative;
   background-color: var(--white-txt-bg-cl);
   padding-top: 40px;
@@ -668,7 +737,6 @@ button {
 .features__wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
   margin-bottom: 24px;
   position: relative;
@@ -722,13 +790,12 @@ button {
 
 .features__list--bottom {
   display: flex;
-  justify-content: center;
+
   flex-wrap: wrap;
   gap: 24px;
 }
 @media screen and (min-width: 768px) {
   .features__list--bottom {
-    justify-content: start;
     gap: 87px;
   }
 }
@@ -798,7 +865,7 @@ button {
 @media screen and (min-width: 768px) {
   .video .container {
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
     background-image: url(../images/video/glow-big_tab.png), url(../images/video/glow-s_tab.png);
     background-position: 45% 250%, left top;
     background-size: auto;
@@ -814,8 +881,9 @@ button {
     padding-top: 60px;
     padding-bottom: 60px;
     background-image: url(../images/video/glow-big_desk.png), url(../images/video/glow-s_desk.png);
-    background-position: right bottom, 18% 5%;
-    background-size: auto;
+    background-position: right bottom, 20% top;
+    background-size: 678px, 414px;
+
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
