@@ -4,7 +4,21 @@
   |============================
 */
 
+@-webkit-keyframes scale-up-center {
+  0%   {-webkit-transform: scale(1.0); transform: scale(1.0);}
+  50%  {-webkit-transform: scale(1.35); transform: scale(1.35);}
+  100% {-webkit-transform: scale(1); transform: scale(1);}
+}
+
+@keyframes scale-up-center {
+  0%   {-webkit-transform: scale(1.0); transform: scale(1.0);}
+  50%   {-webkit-transform: scale(1.35); transform: scale(1.35);}
+  100% {-webkit-transform: scale(1); transform: scale(1);}
+}
+
 .app-link {
+  position: relative;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,47 +27,48 @@
   height: 60px;
   border-radius: 50%;
 
-  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+  &:hover,
+  &:focus {
+    -webkit-animation: scale-up-center 700ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+    animation: scale-up-center 700ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+  }
+
+  &::before {
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+    background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);
+  }
+
+  &::after {
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+
+    border-radius: 50%;
+    background: #06071b;
+
+    z-index: 10;
+    opacity: 0;
+    transform: scale(0.01);
+
+    transition: 300ms cubic-bezier(0.390, 0.575, 0.565, 1.000);
+  }
+
+  &:hover::after,
+  &:focus::after {
+    opacity: 1;
+    transform: scale(1.0);
+  }
 }
 
 .app-icon {
+  z-index: 11;
   fill: #ffffff;
-}
-
-/**
-  |============================
-  | Socials icons
-  |============================
-*/
-
-.socials-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-
-  background-image: linear-gradient(90deg, #00c5eb -2%, #b544fe 90%);  
-}
-
-.icon-regular {
-  transition: 400ms;
-
-  .socials-link:hover .socials-icons & {
-    opacity: 0;
-  }
-}
-
-.icon-hovered {
-  opacity: 0;
-  transition: 400ms;
-
-  .socials-link:hover .socials-icons & {
-    opacity: 1;
-  }
-  .socials-link:active .socials-icons & {
-    opacity: 1;
-  }
 }
