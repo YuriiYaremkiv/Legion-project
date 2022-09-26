@@ -1,3 +1,4 @@
+
 .hero {
     position: relative;
     // margin-left: auto;
@@ -13,6 +14,7 @@
     }
 
     @media screen and (min-width: 1280px) {
+        height: 684px;
         
     }
 
@@ -43,15 +45,34 @@
 
     @media screen and (min-width: 768px) {
         width: 768px;
-        height: 640px;
+        height: 580px;
         overflow: visible;
         background-position: left 300px top 300px, right 10px bottom -100px;
-        background-image: url(../images/hero/1-elementmd.png);
-        background-position: top 5%;
+        background-image: url(../images/hero/1-elementmd.png),
+        url(../images/hero/2-elementmd.png),
+        url(../images/hero/3-elementmd.png),
+        url(../images/hero/4-elementmd.png),
+        url(../images/hero/5-elementmd.png),
+        url(../images/hero/6-elementmd.png),
+        url(../images/hero/7-elementmd.png);
+        background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0;
     }
 
     @media screen and (min-width: 1280px) {
         width: 1280px;
+        height: 684px;
+
+        background-image:
+        url(../images/hero/1-elementlg.png),
+        url(../images/hero/2-elementlg.png),
+        url(../images/hero/3-elementlg.png),
+        url(../images/hero/4-elementlg.png),
+        url(../images/hero/5-elementlg.png),
+        url(../images/hero/6-elementlg.png),
+        url(../images/hero/7-elementlg.png);
+
+        background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px
+
     }
 
 
@@ -85,6 +106,7 @@
 
 .hero__list {
     margin-left: 20px;
+    margin-bottom: 60px;
 }
 
 .hero__item {
@@ -122,6 +144,71 @@
     }
 }
 
+
+.hero__button {
+    position: relative;
+
+    display: block;
+    min-width: 150px;
+    min-height: 42px;
+
+    margin-left: 120px;
+    padding: 11px 59px 12px 59px;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 0;
+    }
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--white-txt-bg-cl); 
+    text-transform: uppercase;
+    
+    border-radius: 5px;
+    border: none;
+
+    overflow: hidden;
+    cursor: pointer;
+
+    &::after,
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+    }
+
+    &::before {
+        width: 100%;
+        height: 100%;
+        background-image: var(--gradient-bg-cl);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &::after {
+        width: calc(100% - 2px);
+        height: calc(100% - 2px);
+        border-radius: 5px;
+        background-color: var(--dark-bg-cl);
+        opacity: 0;
+        transition: 250ms;
+    }
+
+    &-text {
+        position: relative;
+        z-index: 10;
+    }
+
+    &:hover::after,
+    &:focus::after {
+        opacity: 1;
+    }    
+}
+
 .hero__img,
 .hero__img-second {
     position: absolute;
@@ -141,7 +228,8 @@
         width: 307px;
         height: 329px;
         right: 0;
-        right: 32px;
+        right: 22px;
+        bottom: -10px;
         opacity: 1;
 
         mix-blend-mode: normal;
@@ -149,6 +237,8 @@
     }
 
     @media screen and (min-width: 1280px) {
+        width: 430px;
+        height: 460px;
         
     }
 
@@ -164,11 +254,13 @@
         width: 328px;
         height: 350px;
         right: 0;
+        bottom: -30px;
         opacity: 1;
     }
 
     @media screen and (min-width: 1280px) {
-        
+        width: 459px;
+        height: 489px;
     }
 
 
