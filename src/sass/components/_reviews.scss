@@ -1,4 +1,4 @@
-.reviews {
+.testimonials {
     padding-top: 0;
     background-image: url(../images/reviews/reviews-back.png);
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
         background-size: cover;
     }
 }
-.reviews__title {
+.testimonials__title {
     font-size: 20px;
     line-height: 1.2;
     text-align: center;
@@ -20,11 +20,11 @@
     }
 }
 
-.reviews__card {
+.testimonials__card {
     text-align: center;
 }
 
-.reviews__image {
+.testimonials__image {
     display: block;
     border-radius: 50%;
     margin-left: auto;
@@ -32,14 +32,14 @@
     margin-bottom: 20px;
 }
 
-.reviews__name {
+.testimonials__name {
     font-size: 18px;
     line-height: 1.22;
     
     margin-bottom: 12px;
 }
 
-.reviews__company {
+.testimonials__company {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
@@ -51,7 +51,7 @@
     }
 }
 
-.reviews__text {
+.testimonials__text {
     max-width: 886px;
     font-weight: 500;
     font-size: 14px;
