@@ -23,6 +23,15 @@
 .nav__item {
     list-style: none;
     margin-left: 40px;
+
+    &:hover,
+    &:focus {
+        background: linear-gradient(90.03deg, #00C5EB -1.97%, #B544FE 89.43%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+    }
 }
 
 .nav__link {

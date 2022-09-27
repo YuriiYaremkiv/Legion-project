@@ -89,7 +89,7 @@
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
         background-image: 
-        url(../images/hero/small-gr-tabl@2x.png),
+        url(../images/hero/small-gr-tabl.png),
         url(../images/hero/Декор-desk.png);
         }
 
@@ -101,7 +101,7 @@
         // url(../images/hero/6-elementlg@2x.png),
         // url(../images/hero/7-elementlg@2x.png),
 
-        background-position: top 10px left -200px, bottom right 400px;
+        background-position: top 100px left 20px, bottom right 400px;
 
         // right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px,
     }
@@ -243,17 +243,19 @@
 }
 
 .hero__img-second {
-    width: 100%;
-    right: -140px;
-    bottom: -20px;
+    // width: 100%;
+    right: -10px;
+    bottom: -100px;
+    mix-blend-mode: normal;
     opacity: 0.5;
+    filter: drop-shadow(4px 4px 0px #252866);
 	z-index: 100;
     height: auto;
 
     @media screen and (min-width: 768px) {
         width: 355px;
         height: auto;
-        right: -14px;
+        right: 2px;
         bottom: -60px;
         opacity: 1;
     }
@@ -265,29 +267,3 @@
         bottom: -80px;
     }
 }
-
-// .block {
-//     display: none;
-//     background-color: var(--white-txt-bg-cl);
-
-//     background-image: url(../images/hero/shadow-desk.png);
-//     background-repeat: no-repeat;
-//     background-position: right 100px bottom;
-
-//     @media (min-device-pixel-ratio: 2),
-//         (min-resolution: 192dpi),
-//         (min-resolution: 2dppx){
-//         background-image: url
-//     }
-
-//     @media screen and (min-width: 768px) {
-//         display: block;
-//         height: 60px;
-//         background-position: right bottom;
-//     }
-
-//     @media screen and (min-width: 1280px) {
-//         background-position: right 60px bottom;
-        
-//     }
-// }
