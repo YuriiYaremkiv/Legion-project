@@ -225,8 +225,8 @@
     }
 
     &::after {
-        width: calc(100% - 2px);
-        height: calc(100% - 2px);
+        width: calc(100% - 3px);
+        height: calc(100% - 3px);
         border-radius: 5px;
         background-color: var(--dark-bg-cl);
         opacity: 0;
