@@ -45,13 +45,17 @@
     background-size: cover;
 
 
+    transform: translateY(-100%);
+    transition: transform 400ms;
+
+
     @media screen and (min-width: 768px) {
         display: none;
     }
 
     &.is-open {
         display: block;
-        transform: translateX(0);
+        transform: translateY(0);
     }
 }
 
