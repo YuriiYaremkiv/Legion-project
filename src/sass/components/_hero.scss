@@ -1,11 +1,11 @@
 
 .hero {
-    position: relative;
     // margin-left: auto;
     // margin-right: auto;
     color: var(--white-txt-bg-cl);
     height: 568px;
     display: flex;
+    overflow: visible;
     background-color: var(--dark-bg-cl);
 
 
@@ -21,89 +21,91 @@
 .hero-container {
     position: relative;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
     width: 480px;
     overflow: hidden;
-
     background-repeat: no-repeat;
-    background-image: 
-    url(../images/hero/Маленький-градієнт-1sm.png),
-    url(../images/hero/Маленький-радієнт-1sm.png);
-    background-position: right -10px bottom -100px, right 2px bottom -150px ;
 
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx){
-      background-image: url(../images/hero/Маленький-градієнт-1sm@2x.png),
-      url(../images/hero/Маленький-радієнт-1sm@2px.png);
-    }
-
-    @media screen and (min-width: 768px) {
+    // tablet
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
         width: 768px;
         height: 580px;
         overflow: visible;
-        background-position: top;
-        background-image: url(../images/hero/1-elementmd.png),
-        url(../images/hero/2-elementmd.png),
-        url(../images/hero/3-elementmd.png),
-        url(../images/hero/4-elementmd.png),
-        url(../images/hero/5-elementmd.png),
-        url(../images/hero/6-elementmd.png),
-        url(../images/hero/7-elementmd.png),
-        url(../images/hero/Градієнт-tabl.png),
-        url(../images/hero/small-gr-tabl.png);
+        // background-position: top;
+        background-image:
+        url(../images/hero/small-gr-tabl.png),
+        url(../images/hero/Декор-tabl.png);
 
-        background-position: right 207px bottom 276px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0, right -20px bottom -100px, top 50px left 5px, right 207px bottom -16px;
+        background-position: left 32px top 108px, bottom right 207px;
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-        background-image: url(../images/hero/1-elementmd@2x.png),
-        url(../images/hero/2-elementmd@2x.png),
-        url(../images/hero/3-elementmd@2x.png),
-        url(../images/hero/4-elementmd@2x.png),
-        url(../images/hero/5-elementmd@2x.png),
-        url(../images/hero/6-elementmd@2x.png),
-        url(../images/hero/7-elementmd@2x.png),
-        url(../images/hero/Градієнт-tabl@2x.png),
-        url(../images/hero/small-gr-tabl@2x.png);
+        background-image:
+        url(../images/hero/small-gr-tabl@2x.png),
+        url(../images/hero/Декор-tabl.png);
+
+        background-position:top -10px left -200px, bottom right 207px;
+
+        // url(../images/hero/1-elementmd@2x.png),
+        // url(../images/hero/2-elementmd@2x.png),
+        // url(../images/hero/3-elementmd@2x.png),
+        // url(../images/hero/4-elementmd@2x.png),
+        // url(../images/hero/5-elementmd@2x.png),
+        // url(../images/hero/6-elementmd@2x.png),
+        // url(../images/hero/7-elementmd@2x.png)
         }
+
+
+        // right 207px bottom 576px, right 273px bottom 242px, right 260px bottom 159px, right 360px bottom 139px, right 391px bottom 59px, right 479px bottom 49px, right 484px bottom 0, right -20px bottom -100px, 
     }
 
+    // desktop
     @media screen and (min-width: 1280px) {
         width: 1280px;
         height: 684px;
+        overflow: visible;
 
         background-image:
-        url(../images/hero/1-elementlg.png),
-        url(../images/hero/2-elementlg.png),
-        url(../images/hero/3-elementlg.png),
-        url(../images/hero/4-elementlg.png),
-        url(../images/hero/5-elementlg.png),
-        url(../images/hero/6-elementlg.png),
-        url(../images/hero/7-elementlg.png),
-        url(../images/hero/Розпилення-desk.png),
-        url(../images/hero/small-gr-tabl.png);
+        url(../images/hero/small-gr-tabl.png),
+        url(../images/hero/Декор-desk.png);
 
-        background-position: right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px, right -60px bottom -90px, top 100px left -5px;
+        // url(../images/hero/1-elementlg.png),
+        // url(../images/hero/2-elementlg.png),
+        // url(../images/hero/3-elementlg.png),
+        // url(../images/hero/4-elementlg.png),
+        // url(../images/hero/5-elementlg.png),
+        // url(../images/hero/6-elementlg.png),
+        // url(../images/hero/7-elementlg.png),
+
+        background-position: top 10px left -5px, bottom right 400px;
+
+        // right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px,
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx){
-        background-image: url(../images/hero/1-elementlg@2x.png),
-        url(../images/hero/2-elementlg@2x.png),
-        url(../images/hero/3-elementlg@2x.png),
-        url(../images/hero/4-elementlg@2x.png),
-        url(../images/hero/5-elementlg@2x.png),
-        url(../images/hero/6-elementlg@2x.png),
-        url(../images/hero/7-elementlg@2x.png),
-        url(../images/hero/Розпилення-desk@2x.png),
-        url(../images/hero/small-gr-tabl@2x.png);
+        background-image: 
+        url(../images/hero/small-gr-tabl@2x.png),
+        url(../images/hero/Декор-desk.png);
         }
+
+        // url(../images/hero/1-elementlg@2x.png),
+        // url(../images/hero/2-elementlg@2x.png),
+        // url(../images/hero/3-elementlg@2x.png),
+        // url(../images/hero/4-elementlg@2x.png),
+        // url(../images/hero/5-elementlg@2x.png),
+        // url(../images/hero/6-elementlg@2x.png),
+        // url(../images/hero/7-elementlg@2x.png),
+
+        background-position: top 10px left -200px, bottom right 400px;
+
+        // right 500px bottom 357px, right 400px bottom 347px, right 633px bottom 267px, right 486px bottom 239px, right 688px bottom 155px, right 811px bottom 122px, right 827px bottom 39px,
     }
 }
-
 
 .hero__main-title {
     font-weight: 700;
@@ -129,7 +131,6 @@
         margin-bottom: 28px;
     }
 }
-
 
 .hero__list {
     margin-left: 20px;
@@ -161,36 +162,28 @@
 
 .hero-block {
     position: relative;
+    z-index: 120;
 
-    @media screen and (min-width: 768px) {
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        
-    }
 }
 
 
 .hero__button {
-    position: absolute;
-    bottom: 122px;
-    left: 130px;
+    position: relative;
 
     display: block;
     min-width: 150px;
     min-height: 42px;
+    margin: 0 auto;
 
-    // margin-left: 120px;
     padding: 11px 59px 12px 59px;
+
+	z-index: 130;
 
     @media screen and (min-width: 768px) {
         margin-left: 0;
-        left: 32px;
     }
 
     @media screen and (min-width: 1280px) {
-        left: 16px;
     }
 
     font-weight: 700;
@@ -249,76 +242,52 @@
     object-fit: contain;
 }
 
-.hero__img{
-    height: 430px;
-    right: -115px;
-    bottom: 35px;
-    mix-blend-mode: normal;
-    opacity: 0.5;
-    filter: drop-shadow(4px 4px 0px #252866);
-
-    @media screen and (min-width: 768px) {
-        width: 307px;
-        height: 329px;
-        right: 0;
-        right: 22px;
-        bottom: -10px;
-        opacity: 1;
-
-        mix-blend-mode: normal;
-        filter: drop-shadow(4px 4px 0px #252866);
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 430px;
-        height: 460px;
-    }
-}
-
 .hero__img-second {
-    height: 456px;
-    right: -150px;
-    bottom: 15px;
+    width: 100%;
+    right: -140px;
+    bottom: -20px;
     opacity: 0.5;
+	z-index: 100;
+    height: auto;
 
     @media screen and (min-width: 768px) {
-        width: 328px;
-        height: 350px;
-        right: 0;
-        bottom: -30px;
+        width: 355px;
+        height: auto;
+        right: -14px;
+        bottom: -60px;
         opacity: 1;
     }
 
     @media screen and (min-width: 1280px) {
-        width: 459px;
-        height: 489px;
+        right: 45px;
+        width: 473px;
+        height: auto;
+        bottom: -80px;
     }
-
-
 }
 
-.block {
-    display: none;
-    background-color: var(--white-txt-bg-cl);
+// .block {
+//     display: none;
+//     background-color: var(--white-txt-bg-cl);
 
-    background-image: url(../images/hero/shadow-desk.png);
-    background-repeat: no-repeat;
-    background-position: right 100px bottom;
+//     background-image: url(../images/hero/shadow-desk.png);
+//     background-repeat: no-repeat;
+//     background-position: right 100px bottom;
 
-    @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx){
-        background-image: url
-    }
+//     @media (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx){
+//         background-image: url
+//     }
 
-    @media screen and (min-width: 768px) {
-        display: block;
-        height: 60px;
-        background-position: right bottom;
-    }
+//     @media screen and (min-width: 768px) {
+//         display: block;
+//         height: 60px;
+//         background-position: right bottom;
+//     }
 
-    @media screen and (min-width: 1280px) {
-        background-position: right 60px bottom;
+//     @media screen and (min-width: 1280px) {
+//         background-position: right 60px bottom;
         
-    }
-}
+//     }
+// }
