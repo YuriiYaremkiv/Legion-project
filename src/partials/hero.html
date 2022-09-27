@@ -1,20 +1,31 @@
 <!-- hero -->
 <section class="hero">
     <div class="container hero-container">
-        <img class="hero__img-second"
-		data-aos="zoom-in"
-		data-aos-duration="700"
-		data-aos-once="true" 
-        srcset=
-        "./images/hero/iPhone-tabl.png 355w,
-        ./images/hero/iPhone-mob.png 422w,
-        ./images/hero/iPhone-desk.png 472w,
-        ./images/hero/iPhone-tabl@2x.png 710w,
-        ./images/hero/iPhone-mob@2x.png 844w,
-        ./images/hero/iPhone-desk@2x.png 944w"
+        <picture>
 
-        sizes="(min-width: 1280px) 472px, (min-width: 768px) 355px, (min-width: 480px) 422px, 100vw"
-        src="./images/hero/iPhone-mob.png" alt="телефон" width="422">
+        <!-- desktop -->
+        <source media="(min-width: 1280px)" 
+        srcset="
+        ./images/hero/iPhone-desk.png 1x, 
+        ./images/hero/iPhone-desk@2x.png 2x">
+
+        <!--tablet -->
+        <source media="(min-width: 768px)" 
+        srcset="
+        ./images/hero/iPhone-tabl.png 1x, 
+        ./images/hero/iPhone-tabl@2x.png 2x">
+
+        <!-- mobile -->
+        <source media="(max-width: 767px)" 
+        srcset="
+        ./images/hero/iPhone-mob.png 1x, 
+        ./images/hero/iPhone-mob@2x.png 2x">
+            <img class="hero__img-second"
+            data-aos="zoom-in"
+            data-aos-duration="700"
+            data-aos-once="true"
+            src="./images/hero/iPhone-mob.png" alt="phone" width="320" loading="lazy" >
+        </picture>
         <div class="hero-block"
 		data-aos="fade-right"
 		data-aos-duration="700"
@@ -35,4 +46,3 @@
         </button>
     </div>
 </section>
-<div class="block container"></div>
