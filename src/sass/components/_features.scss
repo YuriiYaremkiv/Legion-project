@@ -35,7 +35,7 @@
 	}
 
 	@media screen and (min-width: 1280px) {
-		@include section-video (40px, 161px);
+		@include section-video (100px, 161px);
 		background-image: 
 						url(../images/features/glow-1_desk.png), 
 						url(../images/features/glow-2_desk.png);
