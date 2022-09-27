@@ -52,27 +52,6 @@
 
 .features__desc {
 	text-align: center;
-
-	&::after {
-		@media screen and (min-width: 768px) {
-			content: "";
-			display: block;
-			width: 282px;
-			height: 280px;
-			background-image: url(../images/hero/shadow.png);
-			position: absolute;
-			right: -1%;
-			bottom: 132%;	
-		}
-
-		@media screen and (min-width: 1280px) {
-			width: 394px;
-			height: 391px;
-			background-image: url(../images/hero/shadow-desk.png);
-			right: 3%;
-			bottom: 123%;
-		}
-	}
 }
 
 
