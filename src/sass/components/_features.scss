@@ -25,7 +25,7 @@
 		background-image: 
 						url(../images/features/glow-1_tab.png), 
 						url(../images/features/glow-2_tab.png);
-		background-position: 100% 200%, 100% 250%;
+		background-position: 100% 200%, 100% 300%;
 
 		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
 		background-image: 
@@ -52,7 +52,29 @@
 
 .features__desc {
 	text-align: center;
+
+	&::after {
+		@media screen and (min-width: 768px) {
+			content: "";
+			display: block;
+			width: 282px;
+			height: 280px;
+			background-image: url(../images/hero/shadow.png);
+			position: absolute;
+			right: -1%;
+			bottom: 132%;	
+		}
+
+		@media screen and (min-width: 1280px) {
+			width: 394px;
+			height: 391px;
+			background-image: url(../images/hero/shadow-desk.png);
+			right: 3%;
+			bottom: 123%;
+		}
+	}
 }
+
 
 .features__title {
 	font-weight: 700;
@@ -98,78 +120,43 @@
 	align-items: center;
 	gap: 24px;
 
-	margin-bottom: 24px;
-
 	position: relative;
 
 	@media screen and (min-width: 768px) {
-		align-items: end;
-		gap: 80px;
-
-		margin-bottom: 80px;
-		padding-right: 60px;
+		align-items: end;	
 	}
 
 	@media screen and (min-width: 1280px) {
-		flex-direction: row;
-		justify-content: space-between;
-		align-items: start;
-
-		padding-left: 140px;
-		padding-right: 133px;
-	}
-}
-
-.features__img {
-	margin-bottom: 16px;
-
-	@media screen and (min-width: 768px) {
-		position: absolute;
-		top: 0px;
-		left: -32px;
-	}
-
-	@media screen and (min-width: 1280px) {
-		top: -61px;
-		left: 50%;
-		transform: translateX(-50%);
+		align-items: center;
 	}
 }
 
 .features__list {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	gap: 24px;
 
 	@media screen and (min-width: 768px) {
 		gap: 80px;
-	}	
-}
-
-.features__list--bottom {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: 24px;
-
-	@media screen and (min-width: 768px) {
-		justify-content: start;
-		gap: 87px;
+		padding-right: 60px;
 	}
 
 	@media screen and (min-width: 1280px) {
-		display: flex;
-		justify-content: space-between;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 80px 232px;
 
-		padding-left: 140px;
-		padding-right: 133px;
+		padding: 0;
 	}
 }
 
-.features__item {
+
+.features__item--thumb {
 	position: relative;
 
-	padding-left: 40px;
+	padding-left: 42px;
 
 	&::before {
 		content: "";
@@ -184,6 +171,14 @@
 
 		background-image: url(../images/gear.svg);
 	}	
+}
+
+.features__item--tab {
+	@media screen and (min-width: 768px) and (max-width: 1279px) {
+		position: absolute;
+		bottom: 0;
+		left: -365px;
+	  }
 }
 
 .features__item--title {
@@ -203,5 +198,21 @@
 
 	@media screen and (min-width: 1280px) {
 		max-width: 220px;
+	}
+}
+
+.features__img {
+	margin-bottom: 16px;
+
+	@media screen and (min-width: 768px) {
+		position: absolute;
+		top: 0px;
+		left: -32px;
+	}
+
+	@media screen and (min-width: 1280px) {
+		top: -61px;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }
