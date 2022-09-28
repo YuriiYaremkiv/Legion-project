@@ -236,7 +236,6 @@
     }    
 }
 
-.hero__img,
 .hero__img-second {
     position: absolute;
     object-fit: contain;
@@ -251,6 +250,7 @@
     filter: drop-shadow(4px 4px 0px #252866);
 	z-index: 100;
     height: auto;
+    transform: translate(52%,-40%);
 
     @media screen and (min-width: 768px) {
         width: 355px;
