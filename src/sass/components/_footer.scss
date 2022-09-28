@@ -217,16 +217,16 @@
     }
 
     &::before {
-        width: 102%;
-        height: 102%;
+        width: 105%;
+        height: 105%;
         background-image: var(--gradient-bg-cl);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     &::after {
-        width: calc(100% - 3px);
-        height: calc(100% - 3px);
+        width: calc(99% - 2px);
+        height: calc(99% - 2px);
         border-radius: 5px;
         background-color: var(--dark-bg-cl);
         opacity: 0;
