@@ -148,7 +148,13 @@
 		top: 0;
 		left: 0px;
 
-		background-image: url(../images/gear.svg);
+		background-image: url('../images/gear.png');
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url('../images/gear@2x.png');                
+        }
 	}	
 }
 
