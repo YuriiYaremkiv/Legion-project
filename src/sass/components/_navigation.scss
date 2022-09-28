@@ -23,6 +23,14 @@
 .nav__item {
     list-style: none;
     margin-left: 40px;
+}
+
+.nav__link {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.25;
+    color: var(--white-txt-bg-cl);
 
     &:hover,
     &:focus {
@@ -32,14 +40,6 @@
         background-clip: text;
         color: transparent;
     }
-}
-
-.nav__link {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.25;
-    color: var(--white-txt-bg-cl);
 
     :last-child {
         margin-right: 0;
